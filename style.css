@@ -1,4 +1,4 @@
-
+/* 1. Reset settings and center layout */
 * {
     margin: 0;
     padding: 0;
@@ -11,10 +11,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
-    transition: background 1s ease; 
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Default Dark Night Mode */
+    transition: background 1s ease; /* Smooth transition when theme changes */
 }
 
+/* 2. Default Night Mode Container Settings (Jo abhi raat mein chalega) */
 .clock-container {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(15px);
@@ -44,8 +45,10 @@ h2 {
     text-shadow: 0 0 20px rgba(0, 173, 181, 0.6);
 }
 
+
+/* 3. Custom classes for Day Mode (Jo subah automatic switch hoga) */
 body.day-mode {
-    background: linear-gradient(135deg, #e0eafc, #cfdef3); 
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Light Day Mode */
 }
 
 body.day-mode .clock-container {
